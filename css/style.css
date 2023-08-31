@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../recursos/Fonts/Roboto-Black.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+.nav {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    margin: 0 0px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#main-index {
+    font-family: sans-serif;
+    max-width: 85vw;
+    margin: auto;
+
+
+    display: grid;
+    grid-template-columns: 1014px 324px;
+    ;
+    grid-template-areas:
+        ". ."
+        "grande parrafo1"
+        "grande parrafo1"
+        ". .";
+}
+
+#main-index section {
+    color: black;
+    font-size: 12px;
+    margin: 40px;
+}
+
+.parrafo1 {
+    grid-area: parrafo1;
+}
+
+
+.grande {
+    grid-area: grande;
+}
+
+.footer {
+    font-family: 'roboto', sans-serif;
+    background-color: #944cff;
+    color: black;
+    text-transform: uppercase;
+    font: bolder;
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+}
+
+.grande {
+    width: 400px;
+    border: 1px solid black;
+    margin-left: 500px;
+}
+
+a {
+    background-color: #944cff;
+    display: inline-block;
+    height: 20px;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+}
+
+li {
+    background-color: none;
+    display: inline-block;
+}
+
+.contacto {
+    color: black;
+    text-decoration: underline;
+}
+
+.titulo {
+    text-align: center;
+    background-color: #944cff;
+    width: 300px;
+}
+
+.hola {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    background-color: #944cff;
+    height: 80px;
+}
+
+.header img {
+    width: 250px;
+    padding: 20px;
+}
+
+.header {
+    padding: 50px;
+}
+
+#main-index p {
+    margin: 20px 0;
+}
+
+@media (max-width: 1379px) {
+    #main-index {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            ". ."
+            "grande"
+            "grande"
+            "parrafo1"
+            "parrafo1";
+    }
+}
